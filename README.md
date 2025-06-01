@@ -1,2 +1,1 @@
-# clair
-Annotation workspace for Point Cloud Data
+# clair - reimagining medical data
