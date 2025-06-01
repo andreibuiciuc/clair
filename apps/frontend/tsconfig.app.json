@@ -9,8 +9,11 @@
       "ESNext",
       "WebWorker"
     ],
+    "baseUrl": ".",
     "paths": {
-      "@/*": ["./src/*"]
+      "@/*": [
+        "./src/*"
+      ]
     }
   }
 }

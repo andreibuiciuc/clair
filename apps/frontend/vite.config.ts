@@ -4,6 +4,7 @@ import vueDevTools from 'vite-plugin-vue-devtools'
 import { defineConfig } from 'vite'
 import { fileURLToPath, URL } from 'node:url'
 import { viteStaticCopy } from 'vite-plugin-static-copy'
+import tailwindcss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [
@@ -14,7 +15,8 @@ export default defineConfig({
       targets: [
         { src: 'node_modules/@itk-wasm/image-io/dist/pipelines/*.{js,wasm,wasm.zst}', dest: 'pipelines' },
       ],
-    })
+    }),
+    tailwindcss(),
   ],
   optimizeDeps: {
     exclude: [
