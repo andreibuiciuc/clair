@@ -1,4 +1,5 @@
 import Home from '@/views/Home.vue'
+import VolumeViewer from '@/features/volume-viewer/index.vue';
 import { createRouter, createWebHistory } from 'vue-router'
 
 const router = createRouter({
@@ -8,6 +9,11 @@ const router = createRouter({
       path: '/',
       name: 'home',
       component: () => Home,
+    },
+    {
+      path: '/volume-viewer',
+      name: 'volume-viewer',
+      component: () => VolumeViewer
     }
   ],
 })

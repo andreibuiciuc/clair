@@ -127,7 +127,7 @@ export function useVtkRender() {
   function renderVolume(container: HTMLElement, payload: VolumePayload, options?: VolumeOpts) {
     const fullScreenRenderer = vtkFullScreenRenderWindow.newInstance({
       container: container,
-      background: [0, 0, 0]
+      background: options?.background || [0, 0, 0],
     });
 
     const renderer = fullScreenRenderer.getRenderer();

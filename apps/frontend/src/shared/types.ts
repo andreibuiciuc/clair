@@ -1,5 +1,7 @@
 import type { FloatTypes, IntTypes } from "itk-wasm";
 
+export type ColorMode = 'light' | 'dark';
+
 export type VolumePayload = {
   buffer: ArrayBufferLike;
   dims: number[];

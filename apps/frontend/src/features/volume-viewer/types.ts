@@ -31,8 +31,9 @@ export type OpacityTransferPreset = {
 }
 
 export type VolumeOpts = {
-  colorTransferOpts: ColorTransferOpts;
-  opacityTransferFn: OpacityTransferOpts;
+  background?: [number, number, number];
+  colorTransferOpts?: ColorTransferOpts;
+  opacityTransferFn?: OpacityTransferOpts;
 }
 
 export type TransferFunctionApplicator<TFunc, TPoint, TResult> = (fn: TFunc, point: TPoint) => TResult;
